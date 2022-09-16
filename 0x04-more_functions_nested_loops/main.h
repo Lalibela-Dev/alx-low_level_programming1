@@ -1,22 +1,25 @@
 #ifndef MAIN_H_INCLUDED
 #define MAIN_H_INCLUDED
-#include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ *main - header file for prototypes
+ *void prototype (void)
+ *int prototype (int)
  */
-int main(void)
-{
-	char c;
 
-	c = 'A';
-	printf("%c: %d\n", c, _isupper(c));
-	c = 'a';
-	printf("%c: %d\n", c, _isupper(c));
-	return (0);
-	
+{
+	void print_numbers(void);
+	void print_most_numbers(void);
+	void most_numbers(void);
+	void print_line(int n);
+	void print_diagonal(int n);
+	void print_square(int size);
+	void print_triangle(int size);
+	void print_number(int n);
+	int _putchar(char);
+	int _isupper(int);
+	int _isdigit(int);
+	int mul(int, int);
+
 	#endif /* MAIN_H */
 }
